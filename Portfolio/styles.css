@@ -1,0 +1,53 @@
+html{
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    display: none;
+} 
+.smileyFace{
+    font-size: 5rem;
+}
+section{
+    height: 100vh;
+}
+#home{
+    background: url('C:/Users/bonga/OneDrive/Desktop/Portfolio/images/background5.jpeg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#about{
+    /* background: url('images/background.jpeg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+#skills{
+    background: url('images/background1.jpeg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#portfolio{
+    /* background: url('images/background2.jpeg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+#contact{
+    background: url('images/background.jpeg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.icon{
+    border: solid 1px #666;
+    border-radius: 10px;
+    padding: 4px;
+}
+.icon a{
+    color: #333;
+}
