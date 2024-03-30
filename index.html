@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="input.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Bongx514.Dev</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="bg-white border-gray-200 py-2.5 dark:bg-gray-900">
+        <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
+            <a href="#" class="flex items-center">
+                <img src="https://www.svgrepo.com/show/499962/music.svg" class="h-6 mr-3 sm:h-9" alt="Landwind Logo">
+                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Bongx514.dev</span>
+            </a>
+            <div class="flex items-center lg:order-2">
+                <div class="hidden mt-2 mr-4 sm:inline-block">
+                    <span></span>
+                </div>
+
+                <a href="#contact"
+                    class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800">Contact
+                    me</a>
+                <button data-collapse-toggle="mobile-menu-2" type="button"
+                    class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="mobile-menu-2" aria-expanded="true">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                    <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+                <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                    <li>
+                        <a href="#home"
+                            class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about"
+                            class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">About
+                            Me</a>
+                    </li>
+                    <li>
+                        <a href="#skills"
+                            class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#experience"
+                            class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Experince</a>
+                    </li>
+                    <li>
+                        <a href="#projects"
+                            class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Projects</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- home -->
+    <section id="home" class="py-8 z-10 font-serif pt-24">
+        <div class="flex flex-col md:flex-row items-center max-w-6xl px-6 py-8 mx-auto">
+            <div class="w-full md:w-1/2 py-8">
+                <h1 class="text-purple-900 text-7xl font-semibold leading-none tracking-tighter">
+                    My name is <br><span class="text-blue-500">Bongani k Thwala<br></span> I am a Front-end Engineer.
+                </h1>
+            </div>
+            <div class="w-full md:w-1/2 py-8">
+                <img src="https://www.svgrepo.com/show/493509/person-who-invests.svg" class="g-image">
+            </div>
+        </div>
+        <div class="flex flex-wrap justify-center pb-16">
+            <button class="bg-black rounded-lg text-white text-xs text-center self-center px-3 py-2 my-2 mx-2">Github <i
+                    class="fab fa-github ml-1"></i></button>
+            <button
+                class="bg-green-700 rounded-lg text-white text-xs text-center self-center px-3 py-2 my-2 mx-2">Whatsapp
+                <i class="fab fa-whatsapp ml-1"></i></button>
+            <button
+                class="bg-pink-700 rounded-lg text-white text-xs text-center self-center px-3 py-2 my-2 mx-2">Instagram
+                <i class="fab fa-instagram ml-1"></i></button>
+            <button
+                class="bg-blue-500 rounded-lg text-white text-xs text-center self-center px-3 py-2 my-2 mx-2">Linkedin
+                <i class="fab fa-linkedin ml-1"></i></button>
+            <button class="bg-black text-white rounded-lg text-xs text-center self-center px-3 py-2 my-2 mx-2">Twitter
+                <i class="fab fa-x ml-1"></i></button>
+        </div>
+    </section>
+    <!-- end home -->
+
+    <!-- about me -->
+    <section id="about" class="pt-10 overflow-hidden bg-gray-50 md:pt-0 sm:pt-16 2xl:pt-24">
+        <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+            <div class="flex flex-col text-center w-full mb-12">
+                <h1 class="sm:text-5xl text-2xl font-medium title-font mb-4 text-gray-900" data-aos="fade-down" >About Me</h1>
+            </div>
+            <div class="grid items-center grid-cols-1 md:grid-cols-2">
+                <div data-aos="fade-right">
+                    <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">Hey 👋 I am
+                        <br class="block sm:hidden" />Bongani K Thwala
+                    </h2>
+                    <p class="max-w-lg mt-3 text-xl leading-relaxed text-gray-600 md:mt-8">
+                        Amet minim mollit non deserunt
+                        ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                        Exercitation veniam consequat sunt nostrud amet.
+                    </p>
+                    <div class="flex flex-wrap">
+                        <a class="mt-8 xl:mt-12 px-12 py-5 text-white font-medium leading-tight inline-block bg-blue-500 rounded-full shadow-xl border border-transparent hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-sky-999 focus:ring-sky-500"
+                            href="#">More about me</a>
+                    </div>
+                    <p class="mt-4 text-xl text-gray-600 md:mt-8">
+                        <span class="relative inline-block">
+                            <span class="absolute inline-block w-full bottom-0.5 h-2 bg-yellow-300"></span>
+                            <span class="relative"> Have a question? </span>
+                        </span>
+                        <br class="block sm:hidden" />Ask me on <a href="#" title=""
+                            class="transition-all duration-200 text-sky-500 hover:text-sky-600 hover:underline">Twitter</a>
+                    </p>
+
+
+                </div>
+
+                <div class="relative">
+                    <img class="absolute inset-x-0 bottom-0 -mb-48 -translate-x-1/2 left-1/2"
+                        src="https://cdn.rareblocks.xyz/collection/celebration/images/team/1/blob-shape.svg" alt="" data-aos="fade-right" />
+
+                    <img class="relative w-full xl:max-w-lg xl:mx-auto 2xl:origin-bottom 2xl:scale-110"
+                        src="../images/profile2.png" alt="" data-aos="fade-right" />
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- end about me -->
+
+    <!-- skills -->
+    <section id="skills" class="text-gray-600 body-font relative py-16">
+        <div class="flex flex-col text-center w-full mb-12 pt-16">
+            <h1 class="sm:text-5xl text-2xl font-medium title-font mb-4 text-gray-900">Skills</h1>
+        </div>
+        <div class="flex flex-wrap justify-center mt-10">
+
+            <!-- card 1 -->
+            <div class="p-4 max-w-sm" data-aos="fade-right">
+                <div class="flex rounded-lg h-full dark:bg-gray-800 bg-teal-400 p-8 flex-col">
+                    <div class="flex items-center mb-3">
+                        <div
+                            class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full dark:bg-indigo-500 bg-indigo-500 text-white flex-shrink-0">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                            </svg>
+                        </div>
+                        <h2 class="text-white dark:text-white text-lg font-medium">Feature 1</h2>
+                    </div>
+                    <div class="flex flex-col justify-between flex-grow">
+                        <p class="leading-relaxed text-base text-white dark:text-gray-300">
+                            Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo
+                            juice poutine.
+                        </p>
+                        <a href="#"
+                            class="mt-3 text-black dark:text-white hover:text-blue-600 inline-flex items-center">Learn
+                            More
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card 2 -->
+            <div class="p-4 max-w-sm" data-aos="fade-right">
+                <div class="flex rounded-lg h-full dark:bg-gray-800 bg-teal-400 p-8 flex-col">
+                    <div class="flex items-center mb-3">
+                        <div
+                            class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full dark:bg-indigo-500 bg-indigo-500 text-white flex-shrink-0">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                            </svg>
+                        </div>
+                        <h2 class="text-white dark:text-white text-lg font-medium">Feature 2</h2>
+                    </div>
+                    <div class="flex flex-col justify-between flex-grow">
+                        <p class="leading-relaxed text-base text-white dark:text-gray-300">
+                            Lorem ipsum dolor sit amet. In quos laboriosam non neque eveniet 33 nihil molestias. Rem
+                            perspiciatis iure ut laborum inventore et maxime amet.
+                        </p>
+                        <a href="#"
+                            class="mt-3 text-black dark:text-white hover:text-blue-600 inline-flex items-center">Learn
+                            More
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card 3 -->
+            <div class="p-4 max-w-sm" data-aos="fade-right">
+                <div class="flex rounded-lg h-full dark:bg-gray-800 bg-teal-400 p-8 flex-col">
+                    <div class="flex items-center mb-3">
+                        <div
+                            class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full dark:bg-indigo-500 bg-indigo-500 text-white flex-shrink-0">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                            </svg>
+                        </div>
+                        <h2 class="text-white dark:text-white text-lg font-medium">Feature 3</h2>
+                    </div>
+                    <div class="flex flex-col justify-between flex-grow">
+                        <p class="leading-relaxed text-base text-white dark:text-gray-300">
+                            Lorem ipsum dolor sit amet. In quos laboriosam non neque eveniet 33 nihil molestias. Rem
+                            perspiciatis iure ut laborum inventore et maxime amet.
+                        </p>
+                        <a href="#"
+                            class="mt-3 text-black dark:text-white hover:text-blue-600 inline-flex items-center">Learn
+                            More
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="grid grid-cols-2 gap-4 rounded-lg md:grid-cols-3 lg:gap-6 py-10">
+            <!-- logo - start -->
+            <div class="flex h-16 items-center justify-center rounded-lg bg-gray-100 p-4 text-gray-400 sm:h-32" data-aos="fade-up">
+                <h3><i class="fa-brands fa-html5"></i> HTML5</h3>
+            </div>
+            <!-- logo - end -->
+
+            <!-- logo - start -->
+            <div class="flex h-16 items-center justify-center rounded-lg bg-gray-100 p-4 text-gray-400 sm:h-32" data-aos="fade-down">
+                <h3><i class="fa-brands fa-css3"></i> CSS3</h3>
+            </div>
+            <!-- logo - end -->
+
+            <!-- logo - start -->
+            <div class="flex h-16 items-center justify-center rounded-lg bg-gray-100 p-4 text-gray-400 sm:h-32" data-aos="fade-up">
+                <h3><i class="fa-brands fa-js"></i> Javascript</h3>
+            </div>
+            <!-- logo - end -->
+
+            <!-- logo - start -->
+            <div class="flex h-16 items-center justify-center rounded-lg bg-gray-100 p-4 text-gray-400 sm:h-32" data-aos="fade-down">
+                <h3><i class="fa-brands fa-js"></i> JQuery</h3>
+            </div>
+            <!-- logo - end -->
+
+            <!-- logo - start -->
+            <div class="flex h-16 items-center justify-center rounded-lg bg-gray-100 p-4 text-gray-400 sm:h-32" data-aos="fade-up">
+                <h3><i class="fa-brands fa-bootstrap"></i> Bootstrap</h3>
+            </div>
+            <!-- logo - end -->
+
+            <!-- logo - start -->
+            <div class="flex h-16 items-center justify-center rounded-lg bg-gray-100 p-4 text-gray-400 sm:h-32" data-aos="fade-down">
+                <h3><i class="fa-brands fa-html5"></i> Tailwindcss</h3>
+            </div>
+            <!-- logo - end -->
+
+            <!-- logo - start -->
+            <div class="flex h-16 items-center justify-center rounded-lg bg-gray-100 p-4 text-gray-400 sm:h-32" data-aos="fade-up">
+                <h3><i class="fa-brands fa-angular"></i> Angular</h3>
+            </div>
+            <!-- logo - end -->
+        </div>
+
+    </section>
+    <!-- end skills -->
+
+    <section id="experience" class="text-gray-600 body-font bg-gray-50 relative py-16">
+        <div class="flex flex-col text-center w-full mb-12 pt-16">
+            <h1 class="sm:text-5xl text-2xl font-medium title-font mb-4 text-gray-900">Experience</h1>
+        </div>
+        
+        <div class="h-full min-h-screen w-full pt-12 p-4">
+            <div class="grid gap-14 md:grid-cols-3 md:gap-5">
+                <div class="rounded-xl bg-white p-6 text-center shadow-xl" data-aos="zoom-in">
+                    <div
+                        class="mx-auto flex h-16 w-16 -translate-y-12 transform items-center justify-center rounded-full bg-teal-400 shadow-lg shadow-teal-500/40">
+                        <i class="fa-solid fa-shop fa-2x text-white"></i>
+                    </div>
+                    <h1 class="text-darken mb-3 text-xl font-medium lg:px-14">The Cross-trainer</h1>
+                    <h3 class="text-darken mb-3 text-xl font-medium lg:px-10">Sales Rep</h3>
+                    <p class="px-4 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo iure inventore amet
+                        modi
+                        accusantium vero perspiciatis, incidunt dicta sed aspernatur!</p>
+                </div>
+
+                <div data-aos-delay="150" class="rounded-xl bg-white p-6 text-center shadow-xl" data-aos="zoom-in">
+                    <div
+                        class="mx-auto flex h-16 w-16 -translate-y-12 transform items-center justify-center rounded-full shadow-lg bg-rose-500 shadow-rose-500/40">
+                        <i class="fa-solid fa-server fa-2x text-white"></i>
+                    </div>
+                    <h1 class="text-darken mb-3 text-xl font-medium lg:px-14 ">ABT Telecoms</h1>
+                    <h3 class="text-darken mb-3 text-xl font-medium lg:px-10">IT Intern</h3>
+                    <p class="px-4 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo iure inventore amet
+                        modi
+                        accusantium vero perspiciatis, incidunt dicta sed aspernatur!</p>
+                </div>
+
+                <div data-aos-delay="300" class="rounded-xl bg-white p-6 text-center shadow-xl" data-aos="zoom-in">
+                    <div
+                        class="mx-auto flex h-16 w-16 -translate-y-12 transform items-center justify-center rounded-full shadow-lg bg-sky-500 shadow-sky-500/40">
+                        <i class="fa-solid fa-laptop-code fa-2x text-white"></i>
+                    </div>
+                    <h1 class="text-darken mb-3 pt-3 text-xl font-medium lg:px-14">Vaimo</h1>
+                    <h3 class="text-darken mb-3 text-xl font-medium lg:px-10">Front-end Engineer</h3>
+                    <p class="px-4 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo iure inventore amet
+                        modi
+                        accusantium vero perspiciatis, incidunt dicta sed aspernatur!</p>
+                </div>
+            </div>
+            
+            <div class="flex flex-col text-center w-full mb-1 pt-24">
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Certifications</h1>
+            </div>
+            
+            <div class="p-1 flex flex-wrap items-center justify-center pt-12">
+
+                <div class="flex-shrink-0 m-6 relative overflow-hidden bg-teal-500 rounded-lg max-w-xs shadow-lg group" data-aos="fade-down">
+                    <svg class="absolute bottom-0 left-0 mb-8 scale-150 group-hover:scale-[1.65] transition-transform" viewBox="0 0 375 283" fill="none"
+                        style="opacity: 0.1;">
+                        <rect x="159.52" y="175" width="152" height="152" rx="8" transform="rotate(-45 159.52 175)" fill="white" />
+                        <rect y="107.48" width="152" height="152" rx="8" transform="rotate(-45 0 107.48)" fill="white" />
+                    </svg>
+                    <div class="relative pt-10 px-10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <div class="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3"
+                            style="background: radial-gradient(black, transparent 60%); transform: rotate3d(0, 0, 1, 20deg) scale3d(1, 0.6, 1); opacity: 0.2;">
+                        </div>
+                        <img class="relative w-40" src="../images/Kanban_system_design_cert.png" alt="">
+                    </div>
+                    <div class="relative text-white px-6 pb-6 mt-6">
+                        <span class="block opacity-75 -mb-1">Kanban University</span>
+                        <div class="flex justify-between">
+                            <span class="block font-semibold text-xl">System Design</span>
+                            <a href="../images/Kanban_system_design_cert.png" target="_blank" class="block bg-white rounded-full text-teal-500 text-xs font-bold px-3 py-2 leading-none flex items-center">View</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex-shrink-0 m-6 relative overflow-hidden bg-orange-500 rounded-lg max-w-xs shadow-lg group" data-aos="fade-right">
+                    <svg class="absolute bottom-0 left-0 mb-8 scale-150 group-hover:scale-[1.65] transition-transform"
+                        viewBox="0 0 375 283" fill="none" style="opacity: 0.1;">
+                        <rect x="159.52" y="175" width="152" height="152" rx="8" transform="rotate(-45 159.52 175)" fill="white" />
+                        <rect y="107.48" width="152" height="152" rx="8" transform="rotate(-45 0 107.48)" fill="white" />
+                    </svg>
+                    <div class="relative pt-10 px-10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <div class="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3"
+                            style="background: radial-gradient(black, transparent 60%); transform: rotate3d(0, 0, 1, 20deg) scale3d(1, 0.6, 1); opacity: 0.2;">
+                        </div>
+                        <img class="relative w-40" src="../images/SQL certificate-CT-CHMRFR10.png" alt="">
+                    </div>
+                    <div class="relative text-white px-6 pb-6 mt-6">
+                        <span class="block opacity-75 -mb-1">Sololearn</span>
+                        <div class="flex justify-between">
+                            <span class="block font-semibold text-xl">SQL Basics</span>
+                            <a href="../images/SQL certificate-CT-CHMRFR10.png" target="_blank" class="block bg-white rounded-full text-teal-500 text-xs font-bold px-3 py-2 leading-none flex items-center">View</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex-shrink-0 m-6 relative overflow-hidden bg-teal-500 rounded-lg max-w-xs shadow-lg group" data-aos="fade-up">
+                    <svg class="absolute bottom-0 left-0 mb-8 scale-150 group-hover:scale-[1.65] transition-transform" viewBox="0 0 375 283" fill="none"
+                        style="opacity: 0.1;">
+                        <rect x="159.52" y="175" width="152" height="152" rx="8" transform="rotate(-45 159.52 175)" fill="white" />
+                        <rect y="107.48" width="152" height="152" rx="8" transform="rotate(-45 0 107.48)" fill="white" />
+                    </svg>
+                    <div class="relative pt-10 px-10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <div class="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3"
+                            style="background: radial-gradient(black, transparent 60%); transform: rotate3d(0, 0, 1, 20deg) scale3d(1, 0.6, 1); opacity: 0.2;">
+                        </div>
+                        <img class="relative w-40" src="../images/Kanban_system_design_cert.png" alt="">
+                    </div>
+                    <div class="relative text-white px-6 pb-6 mt-6">
+                        <span class="block opacity-75 -mb-1">Kanban University</span>
+                        <div class="flex justify-between">
+                            <span class="block font-semibold text-xl">System Design</span>
+                            <span class="block bg-white rounded-full text-teal-500 text-xs font-bold px-3 py-2 leading-none flex items-center">View</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        
+
+    </section>
+
+
+    <section id="projects" class="text-gray-600 body-font relative py-16">
+        <div class="flex flex-col text-center w-full mb-12 pt-16">
+            <h1 class="sm:text-5xl text-2xl font-medium title-font mb-4 text-gray-900">Projects</h1>
+        </div>
+    
+    
+        
+
+    </section>
+
+    <!-- contact me --> 
+    <section id="contact" class="text-gray-600 bg-gray-50 body-font relative">
+        <div class="container px-5 py-20 mx-auto">
+            <div class="flex flex-col text-center w-full mb-12">
+                <h1 class="sm:text-5xl text-2xl font-medium title-font mb-4 text-gray-900">Contact Me</h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Please get in touch</p>
+            </div>
+            <form action="https://fabform.io/f/{form-id}" method="post">
+                <div class="lg:w-1/2 md:w-2/3 mx-auto">
+                    <div class="flex flex-wrap -m-2">
+                        <div class="p-2 w-1/2">
+                            <div class="relative">
+                                <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+                                <input type="text" id="name" name="name"
+                                    class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                            </div>
+                        </div>
+                        <div class="p-2 w-1/2">
+                            <div class="relative">
+                                <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+                                <input type="email" id="email" name="email"
+                                    class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                            </div>
+                        </div>
+                        <div class="p-2 w-full">
+                            <div class="relative">
+                                <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+                                <textarea id="message" name="message"
+                                    class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                            </div>
+                        </div>
+                        <div class="p-2 w-full">
+                            <button
+                                class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Send
+                            </button>
+                        </div>
+                        <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
+                            <a class="text-indigo-500" href="mailto:bonganithwala514@live.com">If you don't like forms
+                                click to reveal email</a>
+                            <p class="leading-normal my-5">Soshanguve
+                                <br>Pretoria, Gauteng, South Africa
+                            </p>
+                            <span class="inline-flex">
+                                <a href="#" class="text-gray-500">
+                                    <i class="fa-solid fa-phone fa-2x"></i>
+                                </a>
+                                <a href="#" class="ml-4 text-gray-500">
+                                    <i class="fa-brands fa-instagram fa-2x"></i>
+                                </a>
+                                <a href="#" class="ml-4 text-gray-500">
+                                    <i class="fa-brands fa-whatsapp fa-2x"></i>
+                                </a>
+                                <a href="#" class="ml-4 text-gray-500">
+                                    <i class="fa-brands fa-linkedin fa-2x"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- contact me end  -->
+
+
+    <!-- footer -->
+    <footer class="mx-auto w-full relative text-center bg-blue-600 text-white">
+        <div class="px-6 py-8 md:py-14 xl:pt-20 xl:pb-12">
+            <h2 class="font-bold text-3xl xl:text-4xl leading-snug">
+                Ready to get your productivity back?<br>Start your free trial today.
+            </h2>
+            <a class="mt-8 xl:mt-12 px-12 py-5 text-lg font-medium leading-tight inline-block bg-blue-800 rounded-full shadow-xl border border-transparent hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-sky-999 focus:ring-sky-500"
+                href="tel://+27836380735">Call me <i class="fa-solid fa-phone"></i></a>
+            <div class="mt-14 xl:mt-20">
+                <nav class="flex flex-wrap text-white justify-center text-lg font-medium">
+                    <div class="px-5 py-2"><a href="#">Contact</a></div>
+                    <div class="px-5 py-2"><a href="#">Pricing</a></div>
+                    <div class="px-5 py-2"><a href="#">Privacy</a></div>
+                    <div class="px-5 py-2"><a href="#">Terms</a></div>
+                    <div class="px-5 py-2"><a href="#">Twitter</a></di0v>
+                </nav>
+                <p class="mt-7 text-base">© 2024 Bongx514.dev, LLC</p>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- plug in scripts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--  -->
+    <script src="scrollScript.js"></script>
+
+</body>
+
+</html>
