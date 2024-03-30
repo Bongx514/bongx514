@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    scroll-behavior: smooth;
+    
+}
+html::-webkit-scrollbar{
+    display: none;
+} 
+
+nav{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+
+
+@media only screen and (max-width: 1018px) {
+    nav{
+        position: relative;
+        width: auto;
+        z-index: 1;
+    }
+}
